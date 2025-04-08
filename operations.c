@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int add(int v1,int v2);
 int sub(int v1,int v2);
@@ -27,6 +28,10 @@ int main(){
 	else if(opt == 4){
 		add(v1,v2);
 	}
+	
+	else if(opt == 5){
+		exp(v1,v2);
+	}
 
 
 }
@@ -47,4 +52,8 @@ int mul(int v1,int v2){
 
 int div(int v1,int v2){
 	return (v1/v2);
+}
+
+int exp(int v1,int v2){
+	return (pow(v1,v2));
 }
